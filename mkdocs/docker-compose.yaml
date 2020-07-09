@@ -1,0 +1,10 @@
+version: "1"
+services: 
+  filebrowser:
+    image: "ccr.ccs.tencentyun.com/wspace/hub:mkdocs_v1"
+    container_name: "mkdocs"
+    restart: "always"
+    volumes: 
+      - "/data:/mkdocs/docs"
+    ports: 
+      - "8000:8080"
