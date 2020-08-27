@@ -44,3 +44,9 @@ services:
 #### 步骤5：执行命令  
 docker-compose -f example/standalone-mysql.yaml up
 
+## 方式二：集群部署方式，需要拉取多个容器  
+
+#### 步骤1：拉取代码
+git clone https://github.com/nacos-group/nacos-docker.git  
+cd nacos-docker  
+
