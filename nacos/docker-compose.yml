@@ -1,0 +1,13 @@
+version: "2"
+services:
+  nacos:
+    image: nacos/nacos-server:latest
+    container_name: nacos
+    environment:
+    - MODE=standalone
+    volumes:
+    - /root/wang/github/awesome-docker-compose/nacos/logs:/home/nacos/logs
+    - /root/wang/github/awesome-docker-compose/nacos/init.d/custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+    - "8020:8848"
+    restart: on-failure
